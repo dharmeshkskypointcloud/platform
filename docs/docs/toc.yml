@@ -8,58 +8,56 @@
       href: signup.md
     - name: Login
       href: login.md
-- name: Home
-  items:
-    - name: Home
-      href: home.md
-- name: Data
+- name: Dashboard
+  href: home.md
+- name: Dataflows
   items:
     - name: Integrations
       items:
         - name: Overview
-          href: connectors.md
-        - name: Amazon Redshift
-          href: amazonredshift.md
-        - name: Amazon S3
-          href: amazonsthree.md
-        - name: Azure Blob Storage
-          href: azureblobstorage.md
-        - name: Azure Data Lake Storage Gen1
-          href: azuredatalakestoragegen1.md
-        - name: Azure Data Lake Storage Gen2
-          href: azuredatalakestoragegen2.md
-        - name: Boulevard
-          href: boulevard.md
-        - name: Campaign Monitor
-          href: campaignmonitor.md
-        - name: Dynamics 365
-          href: dynamics365.md
-        - name: Google Cloud Storage(S3 API)
-          href: googlecloudstorage.md
-        - name: Klaviyo
-          href: klaviyo.md
-        - name: Salesforce
-          href: salesforce.md  
-        - name: Salesforce Marketing Cloud
-          href: salesforcemarketingcloud.md
-        - name: SFTP(Simple File Transfer Protocol)
-          href: sftp.md
-        - name: Shopify
-          href: shopify.md
-        - name: Square
-          href: square.md
-        - name: Zenoti
-          href: zenoti.md
-    - name: Dataflows
-      href: dataflows.md
-    - name: Channels
-      href: channels.md
+          href: dataflows.md 
+        - name: Connectors
+          items:
+            - name: Overview
+              href: connectors.md
+            - name: Amazon Redshift
+              href: amazonredshift.md
+            - name: Amazon S3
+              href: amazonsthree.md
+            - name: Azure Blob Storage
+              href: azureblobstorage.md
+            - name: Azure Data Lake Storage Gen1
+              href: azuredatalakestoragegen1.md
+            - name: Azure Data Lake Storage Gen2
+              href: azuredatalakestoragegen2.md
+            - name: Boulevard
+              href: boulevard.md
+            - name: Campaign Monitor
+              href: campaignmonitor.md
+            - name: Dynamics 365
+              href: dynamics365.md
+            - name: Google Cloud Storage(S3 API)
+              href: googlecloudstorage.md
+            - name: Klaviyo
+              href: klaviyo.md
+            - name: Salesforce
+              href: salesforce.md  
+            - name: Salesforce Marketing Cloud
+              href: salesforcemarketingcloud.md
+            - name: SFTP(Simple File Transfer Protocol)
+              href: sftp.md
+            - name: Shopify
+              href: shopify.md
+            - name: Square
+              href: square.md
+            - name: Zenoti
+              href: zenoti.md
     - name: Entities
       href: entities.md
-    - name: Enrichments
-      items:
-        - name: Google Big Query Enrichment
-          href: bigQuery_enrichment.md
+    - name: Relationships
+      href: associations.md
+- name: Resolve
+  items:
     - name: Stitch
       items:
         - name: Overview
@@ -74,43 +72,19 @@
           href: rulemerge.md
         - name: ML Merge
           href: mlmerge.md
+- name: Profile
+  items:
+    - name: Customers
+      href: profiles.md
+    - name: Enrichment
+      items:
+        - name: Google Big Query
+          href: bigQuery_enrichment.md
     - name: Timelines
       href: timelines.md
-    - name: Associations
-      href: associations.md
-- name: Privacy
+- name: Predict
   items:
-    - name: Overview
-      href: privacyoverview.md
-    - name: Data Maps
-      href: datamaps.md  
-    - name: Data Use Cases 
-      href: datausecases.md  
-    - name: Privacy Center
-      href: privacycenter.md  
-    - name: Data Subject Requests
-      href: datasubjectrequest.md
-    - name: Consent Manager
-      href: consentmanager.md          
-    - name: Templates
-      href: privacytemplates.md
-    - name: Reports
-      href: privacyreports.md
-- name: Insights
-  items:
-    - name: Profiles
-      href: profiles.md
-    - name: Audiences
-      items:
-        - name: Audience Overview
-          href: audiences.md
-        - name: Suggested Audiences
-          href: suggestedaudiences.md
-        - name: Audience Insights
-          href: audienceinsights.md
-    - name: Metrics
-      href: metrics.md
-    - name: Predictions
+    - name: Built-In
       items:
         - name: Transactional Churn Model
           items:
@@ -144,10 +118,20 @@
               href: sampleguideforproductrecommendationrulemethod.md
             - name: Sample Guide For Product Recommendation(Using ML Match)
               href: sampleguideforproductrecommendation.md
-    - name: Custom Models
+    - name: Custom
       href: models.md
-- name: Action
+- name: Activate
   items:
+    - name: Audiences
+      items:
+        - name: Overview
+          href: audiences.md
+        - name: Suggested
+          href: suggestedaudiences.md
+        - name: Insights
+          href: audienceinsights.md
+    - name: Metrics
+      href: metrics.md
     - name: Export
       items:
         - name: Overview
@@ -178,26 +162,44 @@
           href: sfmcexport.md
         - name: SkyPoint Cloud Bot
           href: skypointteamsbot.md
-- name: Settings
+- name: Empower
   items:
+    - name: Overview
+      href: privacyoverview.md
+    - name: Privacy Center
+      href: privacycenter.md  
+    - name: DSR
+      href: datasubjectrequest.md
+    - name: Email Templates
+      href: privacytemplates.md
+    - name: Data Maps
+      href: datamaps.md  
+    - name: Data Use Cases 
+      href: datausecases.md  
+    - name: Consent Manager
+      href: consentmanager.md          
+    - name: Reports
+      href: privacyreports.md
+- name: Settings
+  items: 
     - name: Platform
       items:
+        - name: Status
+          href: notifications.md
+        - name: Logs
+          href: activity-stream.md
+        - name: Session
+          href: sessiondefaults.md
+        - name: Users
+          href: security.md
         - name: Tenant Defaults
           href: tenant.md
-        - name: Instance Defaults
-          href: instance.md
-        - name: Session Defaults
-          href: sessiondefaults.md
-        - name: Notification
-          href: notifications.md
-        - name: Schedule
-          href: schedule.md
-        - name: Activity Stream
-          href: activity-stream.md
-    - name: Security
-      href: security.md
+    - name: Schedule
+      href: schedule.md
     - name: Billing Info
       href: billing.md
+    - name: Instances
+      href: instance.md
 - name: Application Development  
   items:
     - name: Developer Portal 
